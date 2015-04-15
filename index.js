@@ -3,7 +3,7 @@ var static = require('express-static');
 var app = Express();
 var http = require('http');
 
-app.use(static(__dirname + '/node_modules'));
+app.use(static(__dirname + '/static'));
 
 http.createServer(app).listen(5000, function () {
 
