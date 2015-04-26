@@ -1,9 +1,9 @@
 var Express = require('express');
-var static = require('express-static');
+var staticFolder = require('express-static');
 var app = Express();
 var http = require('http');
 
-app.use(static(__dirname + '/static'));
+app.use(staticFolder(__dirname + '/static', { maxAge: 86400000 }));
 
 http.createServer(app).listen(5000, function () {
 
