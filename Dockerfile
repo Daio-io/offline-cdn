@@ -5,10 +5,10 @@ RUN     rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-
 # Install Node.js and npm
 RUN     yum install -y npm
 
-# Bundle app source
+# Bundle app
 ADD ./app /app
 
-# Install app dependencies
+# Remove any current node modules and run npm install
 RUN cd  /app && rm -rf node_modules && npm install
 
 EXPOSE  5000
