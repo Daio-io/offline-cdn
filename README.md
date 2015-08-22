@@ -13,4 +13,10 @@ listening on port 5000 as default
 
 example:    
 
-    localhost:5000/angular.js
+js
+
+    localhost:5000/js/semantic.js
+
+css
+
+    localhost:5000/css/semantic.css
